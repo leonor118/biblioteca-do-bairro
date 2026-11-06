@@ -1,11 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biblioteca do Bairro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
-    
+
+  <header>
+    <h1>Biblioteca do Bairro</h1>
+    <p>Livros, revistas e muito mais.</p>
+  </header>
+
+  <nav class="cabecalho" aria-label="Menu principal">
+    <ul>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#horario">Horário</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#dicas">Dicas</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section>
+      <p class="destaque">Novidade: <mark>sala infantil</mark>!</p>
+      <p class="aviso">A inscrição é <strong>gratuita</strong>. Entrada livre.</p>
+    </section>
+
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <div class="catalogo">
+        <article class="cartao cartao-largo">
+          <h3>Empréstimo de livros</h3>
+          <p>Devolva os livros <em>a tempo</em>.</p>
+        </article>
+        <article class="cartao">
+          <h3>Sala de estudo</h3>
+          <p>Espaço calmo para estudar.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="horario">
+      <h2>Horário</h2>
+      <h3>Época de exames</h3>
+      <p>Horário alargado (a confirmar).</p>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre nós</h2>
+      <p>A biblioteca abriu em 1987.
+        Hoje tem mais de 20&nbsp;000 livros.</p>
+      <p>Apoio: <abbr title="Câmara Municipal">CM</abbr></p>
+      <p>Quota: 5&nbsp;€</p>
+    </section>
+
+    <section id="dicas">
+      <h2>Dicas rápidas</h2>
+      <p>Use &lt;p&gt; para parágrafos.</p>
+      <p>Escreva <code>&lt;p&gt;</code> no editor.</p>
+      <p>H<sub>2</sub>O e 2<sup>10</sup></p>
+    </section>
+
+  </main>
+
+  <aside>
+    <h2>Contactos</h2>
+    <address>
+      Rua das Flores, 12<br>
+      4700-123 Braga
+    </address>
+    <hr>
+    <p><small>Fotos: arquivo municipal.</small></p>
+  </aside>
+
+  <footer>
+    <div class="rodape">
+      <p>&copy; 2026 Biblioteca</p>
+      <p>Entrada livre.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
