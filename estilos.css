@@ -1,16 +1,16 @@
 /* Biblioteca do Bairro
    leonor ferreira . 06/11/2026
-   Versão simples: azul, branco e ocre (13/11/2026) */
+   Versão simples: castanho, branco e caramelo (13/11/2026) */
 
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap");
 
 :root {
-  --cor-principal: #1f3a93;   /* azul */
-  --cor-destaque: #e0a82e;    /* ocre */
+  --cor-principal: #6b4226;   /* castanho */
+  --cor-destaque: #d4a373;    /* caramelo */
   --cor-fundo: #ffffff;
-  --cor-fundo-azul: #eef2fc;  /* azul muito claro */
-  --cor-fundo-ocre: #fbf1d4;  /* ocre muito claro */
-  --cor-texto: #1b2440;
+  --cor-fundo-claro: #f5ebe0;  /* castanho muito claro */
+  --cor-fundo-creme: #f3e3cf;  /* caramelo muito claro */
+  --cor-texto: #2e2016;
   --largura: 48rem;
 }
 
@@ -72,7 +72,7 @@ mark {
 }
 
 code {
-  background: var(--cor-fundo-azul);
+  background: var(--cor-fundo-claro);
   border-radius: 4px;
   padding: 0.05em 0.4em;
 }
@@ -83,7 +83,7 @@ address {
 
 hr {
   border: 0;
-  border-top: 1px solid var(--cor-fundo-azul);
+  border-top: 1px solid var(--cor-fundo-claro);
   margin: 1.25rem 0;
 }
 
@@ -104,7 +104,7 @@ header h1 {
 
 header p {
   margin: 0;
-  color: #dbe5ff;
+  color: #f0e0cc;
   font-size: 1.15rem;
 }
 
@@ -158,7 +158,7 @@ main section {
 }
 
 .aviso {
-  background: var(--cor-fundo-azul);
+  background: var(--cor-fundo-claro);
   border-left: 4px solid var(--cor-principal);
   padding: 1rem 1.25rem;
   margin: 0;
@@ -173,7 +173,7 @@ main section {
 }
 
 .cartao {
-  background: var(--cor-fundo-azul);
+  background: var(--cor-fundo-claro);
   border-radius: 8px;
   padding: 1.25rem 1.5rem;
 }
@@ -184,7 +184,7 @@ main section {
 
 .cartao-largo {
   grid-column: 1 / -1;
-  background: var(--cor-fundo-ocre);
+  background: var(--cor-fundo-creme);
 }
 
 /* ---------- Contactos ---------- */
@@ -193,7 +193,7 @@ aside {
   max-width: var(--largura);
   margin: 0 auto 3rem;
   padding: 1.25rem 1.5rem;
-  background: var(--cor-fundo-ocre);
+  background: var(--cor-fundo-creme);
   border-radius: 8px;
 }
 
@@ -209,7 +209,7 @@ aside p:last-child {
 
 footer {
   background: var(--cor-principal);
-  color: #dbe5ff;
+  color: #f0e0cc;
   padding: 1.5rem 1.25rem;
 }
 
