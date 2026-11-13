@@ -1,80 +1,72 @@
 /* Biblioteca do Bairro
-   leonor ferreira . 06/11/2026
-   Versão simples: castanho, branco e caramelo (13/11/2026) */
-
-@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap");
+   leonor ferreira . 06/11/2026 */
 
 :root {
-  --cor-principal: #6b4226;   /* castanho */
-  --cor-destaque: #d4a373;    /* caramelo */
-  --cor-fundo: #ffffff;
-  --cor-fundo-claro: #f5ebe0;  /* castanho muito claro */
-  --cor-fundo-creme: #f3e3cf;  /* caramelo muito claro */
-  --cor-texto: #2e2016;
-  --largura: 48rem;
+  --castanho: #5a3825;
+  --castanho-escuro: #3b2418;
+  --castanho-medio: #8a5a3b;
+  --castanho-claro: #efe5da;
+  --texto: #2b2018;
+  --largura: 46rem;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 4rem;
-}
-
 body {
   margin: 0;
-  background: var(--cor-fundo);
-  color: var(--cor-texto);
-  font-family: "Figtree", "Segoe UI", system-ui, sans-serif;
-  font-size: 1.0625rem;
-  line-height: 1.7;
+  background: #ffffff;
+  color: var(--texto);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.1rem;
+  line-height: 1.65;
 }
-
-/* ---------- Tipografia ---------- */
 
 h1,
 h2,
 h3 {
-  color: var(--cor-principal);
-  line-height: 1.2;
+  color: var(--castanho-escuro);
+  line-height: 1.25;
 }
 
 h2 {
-  font-size: 1.7rem;
-  margin: 0 0 1rem;
+  font-size: 1.6rem;
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--castanho-medio);
 }
 
 h3 {
-  font-size: 1.25rem;
-  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  margin: 0 0 0.4rem;
 }
 
 p {
-  margin: 0 0 1rem;
+  margin: 0 0 0.9rem;
 }
 
 a {
-  color: var(--cor-principal);
+  color: var(--castanho-medio);
+}
+
+a:hover {
+  color: var(--castanho-escuro);
 }
 
 :focus-visible {
-  outline: 3px solid var(--cor-destaque);
-  outline-offset: 3px;
+  outline: 2px solid var(--castanho-medio);
+  outline-offset: 2px;
 }
 
 mark {
-  background: var(--cor-destaque);
-  color: var(--cor-texto);
-  padding: 0.05em 0.4em;
-  border-radius: 4px;
+  background: #e7cfa8;
+  color: var(--texto);
 }
 
 code {
-  background: var(--cor-fundo-claro);
-  border-radius: 4px;
-  padding: 0.05em 0.4em;
+  background: var(--castanho-claro);
+  padding: 0 0.3em;
 }
 
 address {
@@ -83,56 +75,58 @@ address {
 
 hr {
   border: 0;
-  border-top: 1px solid var(--cor-fundo-claro);
+  border-top: 1px solid var(--castanho-claro);
   margin: 1.25rem 0;
 }
 
-/* ---------- Cabeçalho ---------- */
+/* Cabeçalho */
 
 header {
-  background: var(--cor-principal);
+  background: var(--castanho);
   color: #ffffff;
-  text-align: center;
-  padding: 3rem 1.25rem;
+  padding: 2rem 1.25rem 1.5rem;
+}
+
+header h1,
+header p {
+  max-width: var(--largura);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header h1 {
-  margin: 0 0 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
   color: #ffffff;
-  font-size: clamp(2rem, 6vw, 3rem);
+  font-size: 2.4rem;
 }
 
 header p {
-  margin: 0;
-  color: #f0e0cc;
-  font-size: 1.15rem;
+  margin-bottom: 0;
+  color: #e8d8c6;
+  font-style: italic;
 }
 
-/* ---------- Menu ---------- */
+/* Menu */
 
 .cabecalho {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: var(--cor-destaque);
-  padding: 0.6rem 1.25rem;
+  background: var(--castanho-claro);
+  border-bottom: 1px solid var(--castanho-medio);
+  padding: 0.5rem 1.25rem;
 }
 
 .cabecalho ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.25rem 1rem;
-  list-style: none;
-  margin: 0;
+  gap: 0.25rem 1.5rem;
+  max-width: var(--largura);
+  margin: 0 auto;
   padding: 0;
+  list-style: none;
 }
 
 .cabecalho a {
-  display: inline-block;
-  padding: 0.25rem 0.5rem;
-  color: var(--cor-texto);
-  font-weight: 600;
+  color: var(--castanho-escuro);
   text-decoration: none;
 }
 
@@ -140,42 +134,40 @@ header p {
   text-decoration: underline;
 }
 
-/* ---------- Conteúdo ---------- */
+/* Conteúdo */
 
 main {
   max-width: var(--largura);
   margin: 0 auto;
-  padding: 2.5rem 1.25rem 1rem;
+  padding: 2rem 1.25rem 0.5rem;
 }
 
 main section {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.25rem;
 }
 
 .destaque {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-style: italic;
 }
 
 .aviso {
-  background: var(--cor-fundo-claro);
-  border-left: 4px solid var(--cor-principal);
-  padding: 1rem 1.25rem;
+  border: 1px solid var(--castanho-medio);
+  padding: 0.75rem 1rem;
   margin: 0;
 }
 
-/* ---------- Cartões ---------- */
+/* Catálogo */
 
 .catalogo {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
 }
 
 .cartao {
-  background: var(--cor-fundo-claro);
-  border-radius: 8px;
-  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--castanho-medio);
+  padding: 1rem 1.25rem;
 }
 
 .cartao p:last-child {
@@ -184,33 +176,33 @@ main section {
 
 .cartao-largo {
   grid-column: 1 / -1;
-  background: var(--cor-fundo-creme);
+  background: var(--castanho-claro);
+  border-color: var(--castanho);
 }
 
-/* ---------- Contactos ---------- */
+/* Contactos */
 
 aside {
   max-width: var(--largura);
-  margin: 0 auto 3rem;
-  padding: 1.25rem 1.5rem;
-  background: var(--cor-fundo-creme);
-  border-radius: 8px;
+  margin: 0 auto 2.5rem;
+  padding: 0 1.25rem;
 }
 
 aside h2 {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
 }
 
 aside p:last-child {
   margin-bottom: 0;
 }
 
-/* ---------- Rodapé ---------- */
+/* Rodapé */
 
 footer {
-  background: var(--cor-principal);
-  color: #f0e0cc;
-  padding: 1.5rem 1.25rem;
+  background: var(--castanho-escuro);
+  color: #e8d8c6;
+  padding: 1.25rem;
+  font-size: 0.95rem;
 }
 
 .rodape {
@@ -224,10 +216,4 @@ footer {
 
 .rodape p {
   margin: 0;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
 }
