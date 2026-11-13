@@ -153,8 +153,9 @@ main section {
 }
 
 .aviso {
+  border: 1px solid var(--castanho-medio);
+  padding: 0.75rem 1rem;
   margin: 0;
-  color: var(--castanho-medio);
 }
 
 /* Catálogo */
@@ -162,15 +163,12 @@ main section {
 .catalogo {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-  gap: 1.5rem 2.5rem;
-}
-
-.cartao h3 {
-  color: var(--castanho-medio);
+  gap: 1rem;
 }
 
 .cartao {
-  padding: 0;
+  border: 1px solid var(--castanho-medio);
+  padding: 1rem 1.25rem;
 }
 
 .cartao p:last-child {
@@ -179,6 +177,8 @@ main section {
 
 .cartao-largo {
   grid-column: 1 / -1;
+  background: var(--castanho-claro);
+  border-color: var(--castanho);
 }
 
 /* Contactos */
