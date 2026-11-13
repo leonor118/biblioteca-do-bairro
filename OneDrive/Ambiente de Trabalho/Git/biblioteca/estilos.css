@@ -1,0 +1,254 @@
+
+/* Biblioteca do Bairro
+   leonor ferreira . 06/11/2026 */
+
+:root {
+  --castanho: #5a3825;
+  --castanho-escuro: #3b2418;
+  --castanho-medio: #8a5a3b;
+  --caramelo: #c08a5d;
+  --linha: #dcc7b0;
+  --fundo-claro: #f7efe6;
+  --fundo-medio: #ecdcc9;
+  --texto: #2b2018;
+  --largura: 46rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--texto);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Tipografia */
+
+h1,
+h2,
+h3 {
+  color: var(--castanho-escuro);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin: 0 0 1.1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--linha);
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 0 0 0.4rem;
+  color: var(--castanho);
+}
+
+p {
+  margin: 0 0 0.9rem;
+}
+
+a {
+  color: var(--castanho-medio);
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--castanho-escuro);
+}
+
+:focus-visible {
+  outline: 2px solid var(--caramelo);
+  outline-offset: 2px;
+}
+
+mark {
+  background: none;
+  color: var(--castanho-medio);
+  font-weight: bold;
+}
+
+code {
+  background: var(--fundo-claro);
+  padding: 0 0.3em;
+  border-radius: 3px;
+}
+
+address {
+  font-style: normal;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--linha);
+  margin: 1.25rem 0;
+}
+
+/* Cabeçalho */
+
+header {
+  background: var(--castanho);
+  color: #ffffff;
+  padding: 2.75rem 1.25rem 2.25rem;
+  border-bottom: 5px solid var(--caramelo);
+}
+
+header h1,
+header p {
+  max-width: var(--largura);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header h1 {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+  color: #ffffff;
+  font-size: clamp(2.2rem, 6vw, 3.1rem);
+  letter-spacing: 0.01em;
+}
+
+header p {
+  margin-bottom: 0;
+  color: #ecd9c4;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/* Menu */
+
+.cabecalho {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--fundo-claro);
+  border-bottom: 1px solid var(--linha);
+  padding: 0.6rem 1.25rem;
+}
+
+.cabecalho ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.75rem;
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.cabecalho a {
+  color: var(--castanho-escuro);
+  text-decoration: none;
+  padding: 0.2rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.cabecalho a:hover {
+  border-bottom-color: var(--caramelo);
+}
+
+/* Conteúdo */
+
+main {
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 0.5rem;
+}
+
+main section {
+  margin-bottom: 2.75rem;
+}
+
+.destaque {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 1.1rem;
+}
+
+.aviso {
+  background: var(--fundo-claro);
+  border: 1px solid var(--linha);
+  border-left: 5px solid var(--caramelo);
+  border-radius: 6px;
+  padding: 0.9rem 1.25rem;
+  margin: 0;
+}
+
+/* Catálogo */
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.1rem;
+}
+
+.cartao {
+  background: var(--fundo-claro);
+  border: 1px solid var(--linha);
+  border-radius: 6px;
+  padding: 1.1rem 1.4rem;
+}
+
+.cartao p:last-child {
+  margin-bottom: 0;
+}
+
+.cartao-largo {
+  grid-column: 1 / -1;
+  background: var(--fundo-medio);
+  border-color: var(--caramelo);
+}
+
+/* Contactos */
+
+aside {
+  max-width: var(--largura);
+  margin: 0 auto 3rem;
+  padding: 0 1.25rem;
+}
+
+aside h2 {
+  font-size: 1.4rem;
+}
+
+aside p:last-child {
+  margin-bottom: 0;
+}
+
+/* Rodapé */
+
+footer {
+  background: var(--castanho-escuro);
+  color: #ecd9c4;
+  padding: 1.5rem 1.25rem;
+  font-size: 0.95rem;
+  border-top: 5px solid var(--caramelo);
+}
+
+.rodape {
+  max-width: var(--largura);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 2rem;
+}
+
+.rodape p {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
